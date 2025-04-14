@@ -4,16 +4,16 @@
  */
 
 #include <stdio.h>
-#define DLOG_IMPLEMENTATION
-#include "dlog.h"
+#define XDLOG_IMPLEMENTATION
+#include "xdlog.h"
 
 int main(int argc, char **argv) {
   (void)argc;
   (void)argv;
-  DLOG("DLOG\n");
-  DLOG_SUCCESS("DLOG SUCCESS\n");
-  DLOG_WARNING("DLOG WARNING\n");
-  DLOG_ERROR("DLOG ERROR\n");
+  XDLOG("XDLOG\n");
+  XDLOG_SUCCESS("XDLOG SUCCESS\n");
+  XDLOG_WARNING("XDLOG WARNING\n");
+  XDLOG_ERROR("XDLOG ERROR\n");
   printf("Hello, world!\n");
   return 0;
 }
