@@ -1,26 +1,20 @@
-<div align="center">
-
-# 🦄 xdlog
+# xdlog
 
 xdlog is a C library that prints the file, line, and function name of where xdlog is called.
 
-## 🛠️ Usage
+## Usage
 
-Add `xdlog.h` file to your project and the following in only **ONE** .c source file in your project.
+Add `xdlog.h` file to your project and the following in only **ONE** `.c` source file in your project.
 
 ```c
 #define XDLOG_IMPLEMENTATION
 #include "xdlog.h"
 ```
 
-## 📄 Dependencies
+## Run Example
 
-This project uses:
+To run the provided example:
 
-- C99 Standard
-- GNU Make
-
-
-## 🪪 License
-
-This project is licensed under the **MIT license**. See the [LICENSE](LICENSE) file for details.
+```bash
+make run
+```
