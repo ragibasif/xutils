@@ -10,9 +10,11 @@ extern "C" {
 #include <stdarg.h>
 #include <stdio.h>
 
+#ifdef XDLOG_PRINT
 #define printf(...) dlog_printf(__FILE__, __LINE__, __func__, __VA_ARGS__)
 #define fprintf(s, ...)                                                        \
     dlog_fprintf(__FILE__, __LINE__, __func__, s, __VA_ARGS__)
+#endif // XDLOG_PRINT
 
 #define XDLOG_ANSI_RED "\x1b[0;91m"
 #define XDLOG_ANSI_GREEN "\x1b[0;92m"
