@@ -7,7 +7,7 @@ MAGENTA=\033[0;95m
 RESET=\033[0m
 
 CC := gcc
-CFLAGS := -std=c99 -Iinclude -Wall -Wextra -O3 -g -pedantic
+CFLAGS := -std=c99 -Iinclude -Wall -Wextra -O0 -g3 -pedantic
 LDFLAGS :=
 
 EXECUTABLE := demo
